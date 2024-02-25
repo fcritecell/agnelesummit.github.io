@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pop-up Window</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+<style>
+/* Styles for the pop-up */
+.popup {
+    font-family: "Audiowide", sans-serif;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(78, 0, 114, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: glow-shadow 2s infinite alternate;
+    width: 500px;
+    height: 300px;
+}
+
+.popup-content {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+/* Button styles */
+.popup-btn {
+    background-color: #ff46ff;
+    font-size:30px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+.cancel-btn {
+    background-color: #aaa;
+}
+
+.popup-btn:hover {
+    background-color: #b400cc;
+}
+
+.cancel-btn:hover {
+    background-color: #777;
+}
+
+/* Glowing shadow animation */
+@keyframes glow-shadow {
+    0% {
+        box-shadow: 0 0 20px rgba(236, 0, 177, 0.9);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 0, 170, 1.0);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 0, 191, 0.9);
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .popup {
+        width: 90%;
+        max-width: 300px;
+        padding: 10px;
+    }
+}
+</style>
+</head>
+<body onload="showPopup()">
+
+<!-- Pop-up window -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h2>Welcome to <br>Agnel's E-Summit 2024</h2>
+        <p>Would you like to register as an ECELL?</p>
+        <button class="popup-btn" onclick="register()">REGISTER</button>
+        <button class="popup-btn cancel-btn" onclick="closePopup()">CANCEL</button>
+    </div>
+</div>
+
+<script>
+// Function to show the pop-up
+function showPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+}
+
+// Function to close the pop-up
+function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+}
+
+// Function for the register button
+function register() {
+    alert("You clicked Register!");
+    // You can add your registration logic here
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIBA</title>
+    <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="navbar.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            
+		}
+
+        /* Main content styling */
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            height: 100vh;
+            background-image: url("bg.jpg");
+            background-size: cover;
+        }
+
+        .leftBox{
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+		}
+        .events {
+            background-color: rgba(234, 227, 227, 0.2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .leftBox {
+            width: 40%;
+            /* margin-right: 20px; */
+        }
+		.leftBox h1{
+			font-family: "Protest Guerrilla", sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+			font-size: 80px;
+			text-align: center;
+			margin-top: 5px;
+		}
+
+        .events {
+            width: 50%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        /* Button styling */
+        .form-group {
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 22px;
+            border-radius: 10px;
+            width: 200px;
+            height: 70px;
+			align-items: center;
+			margin-left: 90px;
+			font-family: "Protest Guerrilla", sans-serif;
+  			font-weight: 400;
+  			font-style: normal;
+			font-size: 30px;
+        }
+
+        button:hover {
+            background-color: #34ad3a;
+            outline: none;
+            border-color: #26bf47;
+            box-shadow: 0 0 15px #ffffff;
+        }
+
+
+        .event-info b {
+            color: #fefcfc;
+			line-height: 1.6;
+			
+        }
+
+        .event-description {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .instructions {
+            margin-top: 20px;
+            padding-left: 20px;
+			line-height: 1.6;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+        }
+		.instructions ol li {
+            margin-bottom: 10px;
+        }
+		.event-info {
+            margin-bottom: 20px;
+        }
+    
+        /* Responsive adjustments */
+        @media screen and (max-width: 690px) {
+            section {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20%;
+                justify-content: center;
+            }
+            .leftBox {
+                margin-top: 400%;
+                width: 99%;
+                margin-left: 8%;
+            }
+
+            .leftBox h1 {
+                font-size: 28px;
+            }
+
+            .events {
+                width: 80%;
+                margin: 0;
+                margin-bottom: 20px;
+
+            }
+
+            button {
+                width: 166px;
+                height: 47px;
+                font-size:23px;
+                background-color: #4CAF50;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+	 <!--background start--> 
+	 <div class="bg"></div>
+
+	 <div class="star-field">
+	 <div class="layer"></div>
+	 <div class="layer"></div>
+	 <div class="layer"></div>
+	 </div> 
+	 <!--background end-->
+
+<section>
+    <div class="leftBox">
+        <h1>CIBA</h1>
+        <div class="form-group">
+            <button type="submit">REGISTER</button>
+        </div>
+    </div>
+    <div class="events">
+        <div class="event-info">
+            <b>Time:</b> 9:00pm-3:00pm (Day 2)<br>
+            <b></b> Exploring Innovation at CIBA's Incubation Center🚀
+        </div>
+
+        <div class="event-description">
+            <b>Description:</b> Join us on an immersive journey into the heart of innovation at the Center for Innovation. Designed exclusively for leaders and faculty, this visit offers a unique opportunity to witness firsthand the dynamic ecosystem driving breakthroughs.
+        </div>
+
+        <div class="instructions">
+            <b></b>
+            <ol>
+                <b></b> Experience a collaborative environment where cutting-edge research meets entrepreneurial spirit. Engage with visionary startups, interact with industry experts, and gain insights into the latest trends shaping the future <br><br>
+                <b></b>From revolutionary technologies to sustainable solutions, discover how CIBA's Incubation Center is catalyzing innovation and empowering leaders to shape a brighter tomorrow. Don't miss this chance to ignite your curiosity and inspire your journey towards transformative change. Join us at CIBA Incubation Center (Agnels) and unleash the power of innovation!
+            </ol>
+        </div>
+    </div>
+ 
+</section>
+</body>
+
+</html>

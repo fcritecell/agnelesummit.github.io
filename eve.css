@@ -1,0 +1,132 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+.leftBox{
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.events {
+    background-color: rgba(234, 227, 227, 0.2);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.leftBox {
+    width: 40%;
+    /* margin-right: 20px; */
+}
+.leftBox h1{
+    font-family: "Protest Guerrilla", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    font-size: 80px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.events {
+    width: 50%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Button styling */
+.form-group {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #dc27b2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 10px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    /* margin-left: 90px; */
+    font-family: "Protest Guerrilla", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: #c3249e;
+    outline: none;
+    border-color: #7f1d68;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+
+.event-info b {
+    color: #fefcfc;
+    line-height: 1.6;
+    
+}
+
+.event-description {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.instructions {
+    margin-top: 20px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.instructions ol {
+    padding-left: 20px;
+}
+.instructions ol li {
+    margin-bottom: 10px;
+}
+.event-info {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 690px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+        justify-content: center;
+    }
+    .leftBox {
+         margin-top: 0; 
+        width: 99%;
+        margin-left: 8%;
+    }
+
+    .leftBox h1 {
+        font-size: 40px;
+    }
+
+    .events {
+        width: 80%;
+        margin: 0;
+        margin-bottom: 20px;
+
+    }
+
+    button {
+        width: 166px;
+        height: 47px;
+        font-size:23px;
+        background-color: #dc27b2;
+
+    }
+
+}
