@@ -122,7 +122,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 845px) {
   .glitch {
     font-size: 44%;
     flex-wrap: nowrap;
