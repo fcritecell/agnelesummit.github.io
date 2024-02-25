@@ -51,9 +51,7 @@ margin: 0;
   /* position: fixed; */
   /*     top: 0;
     bottom: 0;*/
-  margin-right: 10px;
   /*  right: 0;  */
-  margin-left: 50px;
   align-items: center;
   overflow: hidden;
   border-radius: 50%;
@@ -107,7 +105,7 @@ margin: 0;
 
 .right-div {
   flex: 1;
-  padding: 20px;
+  padding:20px;
 }
 
 #aboutus{
