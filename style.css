@@ -595,24 +595,22 @@ footer a{
       padding: 10px 20px;
   }
 }
-
-/* Sponsers style */
-
-
-.slide p {
-  width: 300px;
-  height: 100px;
+.slide img {
+  width: 350px;
+  height: 200px;
   font-size:30px;
   font-style:bold;
   color:white;
   font-weight:700;
   animation: scroll 40s linear infinite;
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .slide-track {
   width: 100%;
   display: flex;
-  gap: 3em;
+  gap:3rem;
   overflow: hidden;
 }
 
@@ -625,6 +623,8 @@ footer a{
   0% {transform: translateX(0);}
   100% {transform: translatex(-1000%)}
 }
+
+
 .creative-div {
   position: relative;
   width: 100%;
