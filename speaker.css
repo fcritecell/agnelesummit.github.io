@@ -9,21 +9,26 @@
   display:grid;
   align-content: center;
   gap: 1rem;
-  padding: 2rem;
+  /* padding: 2rem; */
   font-family: "Exo 2", sans-serif;
   color: var(--color);
   background: var(--bgColor);
   margin-bottom: none;
 }
 
-
+ol li .title{
+  width:100%;
+  text-wrap: wrap;
+  text-align: center;
+  margin-top: 20px;
+}
 
 ol {
-  width: min(60rem, 90%);
+  width: 100%;
   margin-inline: auto;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
   gap: 2rem;
 
   list-style: none;
@@ -64,3 +69,17 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
 
 .credits { margin-top: 2rem; text-align: right }
 .credits a { color: var(--color) }
+
+
+@media screen and (max-width: 768px) {
+  ol {
+    width: min(60rem, 90%);
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  
+    list-style: none;
+    counter-reset: stepnr;
+  }}
